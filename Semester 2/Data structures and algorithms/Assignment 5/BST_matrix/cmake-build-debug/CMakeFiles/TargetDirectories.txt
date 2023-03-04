@@ -1,0 +1,3 @@
+C:/Users/varga/Downloads/BST_matrix/cmake-build-debug/CMakeFiles/BST_matrix.dir
+C:/Users/varga/Downloads/BST_matrix/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/varga/Downloads/BST_matrix/cmake-build-debug/CMakeFiles/rebuild_cache.dir
