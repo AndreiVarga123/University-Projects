@@ -1,0 +1,22 @@
+        -:    0:Source:C:/Users/varga/Downloads/SortedList/App.cpp
+        -:    0:Graph:C:\Users\varga\Downloads\SortedList\cmake-build-debug-coverage\CMakeFiles\SortedList.dir\App.cpp.gcno
+        -:    0:Data:C:\Users\varga\Downloads\SortedList\cmake-build-debug-coverage\CMakeFiles\SortedList.dir\App.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <iostream>
+        -:    2:
+        -:    3:#include "ShortTest.h"
+        -:    4:#include "ExtendedTest.h"
+        -:    5:
+function main called 1 returned 100% blocks executed 100%
+        1:    6:int main(){
+        1:    7:    testAll();
+        1:    7-block  0
+call    0 returned 1
+        1:    8:    testAllExtended();
+call    0 returned 1
+        1:    9:    std::cout<<"Finished IL Tests!"<<std::endl;
+call    0 returned 1
+call    1 returned 1
+        1:   10:	system("pause");
+call    0 returned 1
+        1:   11:}

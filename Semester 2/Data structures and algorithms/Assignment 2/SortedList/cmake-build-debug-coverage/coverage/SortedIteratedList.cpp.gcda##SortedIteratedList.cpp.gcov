@@ -1,0 +1,217 @@
+        -:    0:Source:C:/Users/varga/Downloads/SortedList/SortedIteratedList.cpp
+        -:    0:Graph:C:\Users\varga\Downloads\SortedList\cmake-build-debug-coverage\CMakeFiles\SortedList.dir\SortedIteratedList.cpp.gcno
+        -:    0:Data:C:\Users\varga\Downloads\SortedList\cmake-build-debug-coverage\CMakeFiles\SortedList.dir\SortedIteratedList.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "ListIterator.h"
+        -:    2:#include "SortedIteratedList.h"
+        -:    3:#include <iostream>
+        -:    4:using namespace std;
+        -:    5:#include <exception>
+        -:    6:
+function _ZN18SortedIteratedListC2EPFbiiE called 8 returned 100% blocks executed 80%
+        8:    7:SortedIteratedList::SortedIteratedList(Relation r) {
+        8:    8:    this->r=r;
+        8:    9:    this->itr=new ListIterator(*this);
+        8:    9-block  0
+call    0 returned 8
+call    1 returned 8
+branch  2 taken 8 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:    9-block  1
+call    4 never executed
+        8:   10:    this->_first= nullptr;
+        8:   11:    this->_size=0;
+        8:   12:}
+        8:   12-block  0
+        -:   13:
+function _ZNK18SortedIteratedList4sizeEv called 3122 returned 100% blocks executed 100%
+     3122:   14:int SortedIteratedList::size() const {
+        -:   15:
+     3122:   16:	return this->_size;
+     3122:   16-block  0
+        -:   17:}
+        -:   18:
+function _ZNK18SortedIteratedList7isEmptyEv called 211 returned 100% blocks executed 100%
+      211:   19:bool SortedIteratedList::isEmpty() const {
+      211:   20:	return this->_size == 0;
+      211:   20-block  0
+        -:   21:}
+        -:   22:
+function _ZNK18SortedIteratedList5firstEv called 511 returned 100% blocks executed 100%
+      511:   23:ListIterator SortedIteratedList::first() const
+        -:   24:{
+      511:   25:    itr->first();
+      511:   25-block  0
+call    0 returned 511
+      511:   26:	return *itr;
+        -:   27:}
+        -:   28:
+function _ZNK18SortedIteratedList10getElementE12ListIterator called 10008 returned 100% blocks executed 100%
+    10008:   29:TComp SortedIteratedList::getElement(ListIterator poz) const
+        -:   30:{
+    10008:   31:    if(!poz.valid())
+    10008:   31-block  0
+call    0 returned 10008
+branch  1 taken 10 (fallthrough)
+branch  2 taken 9998
+       10:   32:        throw exception();
+       10:   32-block  0
+call    0 returned 10
+call    1 returned 10
+call    2 returned 0
+     9998:   33:	return poz.ptr->val;
+     9998:   33-block  0
+        -:   34:}
+        -:   35:
+function _ZN18SortedIteratedList6removeER12ListIterator called 3554 returned 92% blocks executed 100%
+     3554:   36:TComp SortedIteratedList::remove(ListIterator& poz)
+        -:   37:{
+     3554:   38:    if(!poz.valid())
+     3554:   38-block  0
+call    0 returned 3554
+branch  1 taken 272 (fallthrough)
+branch  2 taken 3282
+      272:   39:        throw exception();
+      272:   39-block  0
+call    0 returned 272
+call    1 returned 272
+call    2 returned 0
+     3282:   40:    TComp removed=poz.ptr->val;
+     3282:   41:    itr->first();
+     3282:   41-block  0
+call    0 returned 3282
+     3282:   42:    if(itr->ptr==poz.ptr)
+branch  0 taken 3010 (fallthrough)
+branch  1 taken 272
+        -:   43:    {
+     3010:   44:        this->_first=poz.ptr->next;
+     3010:   45:        delete poz.ptr;
+     3010:   45-block  0
+branch  0 taken 3010 (fallthrough)
+branch  1 taken 0
+     3010:   45-block  1
+call    2 returned 3010
+     3010:   46:        poz.ptr= this->_first;
+     3010:   46-block  0
+        -:   47:    }
+        -:   48:    else
+        -:   49:    {
+     5575:   50:        while (itr->ptr->next !=nullptr &&itr->ptr->next!= poz.ptr)
+      272:   50-block  0
+     5575:   50-block  1
+branch  0 taken 5575 (fallthrough)
+branch  1 taken 0
+     5575:   50-block  2
+branch  2 taken 5303
+branch  3 taken 272 (fallthrough)
+     5303:   51:            itr->next();
+     5303:   51-block  0
+call    0 returned 5303
+      272:   52:        itr->ptr->next=poz.ptr->next;
+      272:   53:        delete poz.ptr;
+      272:   53-block  0
+branch  0 taken 272 (fallthrough)
+branch  1 taken 0
+      272:   53-block  1
+call    2 returned 272
+      272:   54:        poz.ptr=itr->ptr->next;
+      272:   54-block  0
+        -:   55:    }
+     3282:   56:    this->_size--;
+     3282:   57:	return removed;
+     3282:   57-block  0
+        -:   58:}
+        -:   59:
+function _ZNK18SortedIteratedList6searchEi called 13051 returned 100% blocks executed 100%
+    13051:   60:ListIterator SortedIteratedList::search(TComp e) const
+        -:   61:{
+    13051:   62:    itr->first();
+    13051:   62-block  0
+call    0 returned 13051
+  9643944:   63:	while(itr->valid())
+  9643944:   63-block  0
+call    0 returned 9643944
+branch  1 taken 9643132
+branch  2 taken 812 (fallthrough)
+        -:   64:    {
+  9643132:   65:        if (itr->ptr->val == e)
+  9643132:   65-block  0
+branch  0 taken 12239 (fallthrough)
+branch  1 taken 9630893
+    12239:   66:            return *itr;
+    12239:   66-block  0
+  9630893:   67:        itr->next();
+  9630893:   67-block  0
+call    0 returned 9630893
+        -:   68:    }
+      812:   69:    return *itr;
+      812:   69-block  0
+        -:   70:}
+        -:   71:
+function _ZN18SortedIteratedList3addEi called 3309 returned 100% blocks executed 100%
+     3309:   72:void SortedIteratedList::add(TComp e)
+        -:   73:{
+     3309:   74:	itr->first();
+     3309:   74-block  0
+call    0 returned 3309
+     3309:   75:    Node *n=new Node;
+call    0 returned 3309
+     3309:   76:    n->val=e;
+     3309:   77:    if(this->_first== nullptr) {
+branch  0 taken 7 (fallthrough)
+branch  1 taken 3302
+        7:   78:        this->_first = new Node;
+        7:   78-block  0
+call    0 returned 7
+        7:   79:        this->_first->val=e;
+        7:   80:        this->_first->next= nullptr;
+        -:   81:    }
+        -:   82:    else
+     3302:   83:        if(!r(itr->ptr->val,e)) {
+     3302:   83-block  0
+call    0 returned 3302
+branch  1 taken 22 (fallthrough)
+branch  2 taken 3280
+       22:   84:            n->next = itr->ptr;
+       22:   85:            this->_first=n;
+       22:   85-block  0
+        -:   86:        }
+        -:   87:        else
+        -:   88:        {
+  2336291:   89:            while (itr->ptr->next!=nullptr && r(itr->ptr->next->val, e))
+     3280:   89-block  0
+  2336291:   89-block  1
+branch  0 taken 2336265 (fallthrough)
+branch  1 taken 26
+  2336265:   89-block  2
+call    2 returned 2336265
+branch  3 taken 2333011 (fallthrough)
+branch  4 taken 3254
+  2333011:   89-block  3
+     3280:   89-block  4
+  2336291:   89-block  5
+branch  5 taken 2333011
+branch  6 taken 3280 (fallthrough)
+  2333011:   90:                itr->next();
+  2333011:   90-block  0
+call    0 returned 2333011
+     3280:   91:            n->next=itr->ptr->next;
+     3280:   92:            itr->ptr->next=n;
+     3280:   92-block  0
+        -:   93:        }
+     3309:   94:    this->_size++;
+     3309:   95:    itr->first();
+     3309:   95-block  0
+call    0 returned 3309
+     3309:   96:}
+        -:   97:
+function _ZN18SortedIteratedListD2Ev called 8 returned 100% blocks executed 100%
+        8:   98:SortedIteratedList::~SortedIteratedList()
+        -:   99:{
+        8:  100:    delete itr;
+        8:  100-block  0
+branch  0 taken 8 (fallthrough)
+branch  1 taken 0
+        8:  100-block  1
+call    2 returned 8
+        8:  101:}

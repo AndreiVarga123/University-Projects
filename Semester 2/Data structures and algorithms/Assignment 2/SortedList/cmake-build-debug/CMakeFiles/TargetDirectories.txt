@@ -1,0 +1,3 @@
+C:/Users/varga/Downloads/SortedList/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/varga/Downloads/SortedList/cmake-build-debug/CMakeFiles/SortedList.dir
+C:/Users/varga/Downloads/SortedList/cmake-build-debug/CMakeFiles/rebuild_cache.dir
