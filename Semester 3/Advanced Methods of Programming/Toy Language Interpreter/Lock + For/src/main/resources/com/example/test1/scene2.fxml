@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#getPrgWithId" prefHeight="838.0" prefWidth="1118.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test1.SceneController2">
+   <children>
+      <TableView fx:id="heap" layoutX="14.0" layoutY="83.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="heapAddress" prefWidth="100.0" text="Address" />
+          <TableColumn fx:id="heapValue" prefWidth="99.0" text="Value" />
+        </columns>
+      </TableView>
+      <ListView fx:id="out" layoutX="238.0" layoutY="83.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="324.0" layoutY="48.0" text="Out" />
+      <ListView fx:id="fileTable" layoutX="459.0" layoutY="83.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="545.0" layoutY="48.0" text="FileTable" />
+      <ListView fx:id="prgStateId" layoutX="679.0" layoutY="83.0" onMouseClicked="#getPrgWithId" prefHeight="200.0" prefWidth="200.0" />
+      <Label alignment="CENTER" layoutX="678.0" layoutY="48.0" prefHeight="17.0" prefWidth="200.0" text="PrgState identifiers" />
+      <TableView fx:id="symTable" layoutX="14.0" layoutY="319.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="symTableName" prefWidth="100.0" text="Variable name" />
+          <TableColumn fx:id="symTableValue" prefWidth="99.0" text="Value" />
+        </columns>
+      </TableView>
+      <ListView fx:id="exeStack" layoutX="238.0" layoutY="319.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label alignment="CENTER" layoutX="236.0" layoutY="291.0" prefHeight="17.0" prefWidth="200.0" text="ExeStack" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="291.0" prefHeight="17.0" prefWidth="200.0" text="SymTable" />
+      <Label layoutX="100.0" layoutY="48.0" text="Heap" />
+      <TextField fx:id="textField" layoutX="704.0" layoutY="319.0" />
+      <Button fx:id="oneStep" layoutX="1030.0" layoutY="771.0" mnemonicParsing="false" onAction="#runOneStep" text="Iannis" />
+      <TableView fx:id="lockTable" layoutX="459.0" layoutY="319.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="indexColumn" prefWidth="75.0" text="Index" />
+          <TableColumn fx:id="threadIdColumn" prefWidth="75.0" text="Thread Id" />
+        </columns>
+      </TableView>
+      <Label layoutX="555.0" layoutY="291.0" text="LockTable" />
+   </children>
+</AnchorPane>
