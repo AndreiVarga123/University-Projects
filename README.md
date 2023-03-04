@@ -15,18 +15,18 @@ University work and homework.
   <li>:open_file_folder: Semester 2
     <ul>
       <li>
-        <a href="https://github.com/TimoficiucDaniel/Object-Oriented-Programming"> 
-          Object Oriented Programming
-        </a>
-      </li>
-      <li>
         <a href="https://github.com/AndreiVarga123/University-Projects/tree/main/Semester%202/Data%20structures%20and%20algorithms"> 
           Data Structures and Algorithms
         </a>
       </li>
        <li>
-        <a href="https://github.com/TimoficiucDaniel/Graphs"> 
+        <a href="https://github.com/AndreiVarga123/University-Projects/tree/main/Semester%202/Graph%20Algorithms"> 
           Graphs
+        </a>
+      </li>
+      <li>
+        <a href=https://github.com/AndreiVarga123/University-Projects/tree/main/Semester%202/Object%20Oriented%20Programming> 
+          Object Oriented Programming
         </a>
       </li>
     </ul>
