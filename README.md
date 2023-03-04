@@ -6,7 +6,7 @@ University work and homework.
   <li>:open_file_folder: Semester 1
     <ul>
       <li>
-        <a href="https://github.com/TimoficiucDaniel/Fundamentals-of-Programming"> 
+        <a href="https://github.com/AndreiVarga123/University-Projects/tree/main/Semester%201/Fundamentals%20of%20Programming"> 
           Fundamentals of Programming
         </a>
       </li>
