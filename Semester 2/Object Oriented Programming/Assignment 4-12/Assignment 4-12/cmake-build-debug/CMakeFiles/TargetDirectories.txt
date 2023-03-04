@@ -1,5 +1,0 @@
-C:/Users/varga/Downloads/a14/a11/cmake-build-debug/CMakeFiles/a11.dir
-C:/Users/varga/Downloads/a14/a11/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/varga/Downloads/a14/a11/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/varga/Downloads/a14/a11/cmake-build-debug/CMakeFiles/a11_autogen_timestamp_deps.dir
-C:/Users/varga/Downloads/a14/a11/cmake-build-debug/CMakeFiles/a11_autogen.dir
