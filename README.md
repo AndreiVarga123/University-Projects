@@ -34,14 +34,20 @@ University work and homework.
   <li>:open_file_folder: Semester 3
     <ul>
       <li>
-        <a href="https://github.com/TimoficiucDaniel/Advanced-Methods-of-Programming"> 
+        <a href="https://github.com/AndreiVarga123/University-Projects/tree/main/Semester%203/Advanced%20Methods%20of%20Programming"> 
           Advanced Methods of Programming 
         </a>
       </li>
       <li>
-        <a href="https://github.com/TimoficiucDaniel/Databases"> 
+        <a href="https://github.com/AndreiVarga123/University-Projects/tree/main/Semester%203/Databases"> 
             Databases 
         </a>
+      </li>
+      <li>
+        <a href="https://github.com/AndreiVarga123/University-Projects/tree/main/Semester%203/Logical%20and%20Functional%20Programming"> 
+            Logical and Functional Programming 
+        </a>
+      </li>
     </ul>
   </li>
 </ul>
