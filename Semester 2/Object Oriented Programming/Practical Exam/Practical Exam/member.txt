@@ -1,0 +1,4 @@
+Varga Andrei,2,4
+Iannis Taravinas,1,4
+Oana Topan,3,4
+Daniel Timoficiuc,2,4
