@@ -20,7 +20,7 @@ University work and homework.
         </a>
       </li>
       <li>
-        <a href="https://github.com/TimoficiucDaniel/Data-Structures-and-Algorithms"> 
+        <a href="https://github.com/AndreiVarga123/University-Projects/tree/main/Semester%202/Data%20structures%20and%20algorithms"> 
           Data Structures and Algorithms
         </a>
       </li>
