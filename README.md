@@ -50,6 +50,15 @@ University work and homework.
       </li>
     </ul>
   </li>
+   <li>:open_file_folder: Semester 4
+    <ul>
+      <li>
+        <a href="https://github.com/AndreiVarga123/University-Projects/tree/main/Semester%204/Systems%20for%20Design%20and%20Implementation"> 
+          Systems for Design and Implementation
+        </a>
+      </li>
+    </ul>
+  </li>
 </ul>
 
 <br>
